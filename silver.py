@@ -16,11 +16,11 @@ from core.colors import run, bad, end, good, info, white
 from core.utils import notify, load_json, write_json, parse_masscan
 
 print('''
-\t%s𝘴𝘪𝘭𝘷𝘦𝘳%s
+\t%ssilver%s
 ''' % (white, end))
 
 if os.geteuid() != 0:
-	quit('%s You need to run Silver a root!' % info)
+	quit('%s You need to run Silver as root!' % info)
 
 cwd = sys.path[0]
 
